@@ -8,3 +8,5 @@ build/
 bin/
 lib/
 .github/**
+videos/
+P0267_RefImpl/
