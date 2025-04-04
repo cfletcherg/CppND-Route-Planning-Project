@@ -1,3 +1,5 @@
+# TESTING!
+
 # Route Planning Project
 
 This repo contains the starter code for the Route Planning project.
@@ -103,3 +105,46 @@ The testing executable is also placed in the `build` directory. From within `bui
 * If you are facing errors with --config try to remove -- from the command.
 
 
+## Rubric
+Compiling and Testing
+
+The submission must compile.
+Submission Requirements
+
+The project code must compile without errors using cmake and make.
+
+The submission must pass the final set of unit tests.
+Submission Requirements
+
+Code must pass tests that are built with the ./test executable from the build directory of the project. See the project submission instructions for more details on how to run the tests.
+
+    Tip: All Todo items mentioned acrross "main.cpp" and "route_planner.cpp" must be completed.
+
+User Input
+
+The user should be able to provide inputs to the search.
+Submission Requirements
+
+After running the project should be able to test the code by giving a few different input values between 0 and 100 for the start x, start y, end x, and end y coordinates of the search, and the project should find a path between the points.
+
+    Tip: The ToDo mentioned in "main.cpp" should be completed.
+
+The user inputs should correspond with areas on the map.
+Submission Requirements
+
+The coordinate (0, 0) should roughly correspond with the lower left corner of the map, and (100, 100) with the upper right.
+
+Note that for some inputs, the nodes might be slightly off(within +-10% range) the edges of the map, and this is fine.
+Code Efficiency
+
+The methods in the code should avoid unnecessary calculations.
+Submission Requirements
+
+Your code does not need to sacrifice comprehension, stability, or robustness for speed. However, you should maintain good and efficient coding practices when writing your functions.
+
+Here are some things to avoid. This is not a complete list, but there are a few examples of inefficiencies.
+
+    Running the exact same calculation repeatedly when you can run it once, store the value and then reuse the value later.
+    Loops that run too many times.
+    Creating unnecessarily complex data structures when simpler structures work equivalently.
+    Unnecessary control flow checks.
