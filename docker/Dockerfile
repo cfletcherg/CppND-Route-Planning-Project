@@ -27,7 +27,7 @@ LABEL maintainer="Fletcher Garrison <f.garrison4@gmail.com>"
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt update && \
-    apt install -y build-essential cmake libcairo2-dev libgraphicsmagick1-dev libpng-dev git bash xauth x11-apps bash-completion && \
+    apt install -y build-essential cmake libcairo2-dev libgraphicsmagick1-dev libpng-dev git bash xauth x11-apps bash-completion gdb && \
     rm -rf /var/lib/apt/lists/*
 
 RUN echo "alias ls='ls --color=auto'" >> /root/.bashrc && \
